@@ -1,0 +1,9 @@
+"Title_SelectUnit" = "选择单位";
+"AllArea" = "全部";
+"Loading" = "网络加载中...";
+"NetworkBroken" = "网络连接失败，请检查你的网络设置";
+"ServerUnavailable" = "访问网络数据失败，请稍候重试";
+"DataFormatError" = "数据格式有误,请检测服务器设置";
+"ConfirmLogout" = "确定要退出吗？";
+"OK" = "确定";
+"Cancel" = "取消";
