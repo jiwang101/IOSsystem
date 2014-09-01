@@ -27,50 +27,34 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 
-typedef enum {
-    EGOPullOrientationDown = 0, /* Pull Down */
-    EGOPullOrientationUp,       /* Pull Up */
-    EGOPullOrientationRight,    /* Pull Right */
-    EGOPullOrientationLeft,     /* Pull Left */
-}EGOPullOrientation;
-
 typedef enum{
 	EGOOPullRefreshPulling = 0,
 	EGOOPullRefreshNormal,
-	EGOOPullRefreshLoading,
+	EGOOPullRefreshLoading,	
 } EGOPullRefreshState;
 
 @protocol EGORefreshTableHeaderDelegate;
 @interface EGORefreshTableHeaderView : UIView {
 	
-	id _delegate;
 	EGOPullRefreshState _state;
-    EGOPullOrientation _orientation;
-    UIScrollView* _scrollView;
-    
-    BOOL _pagingEnabled;
-    
+
 	UILabel *_lastUpdatedLabel;
 	UILabel *_statusLabel;
 	CALayer *_arrowImage;
 	UIActivityIndicatorView *_activityView;
-    UITableView* _tableView;
 }
+
 @property(nonatomic,assign) id <EGORefreshTableHeaderDelegate> delegate;
 
-#pragma mark - Add by Vincent 2014-06-06
-- (void)egoRefreshScrollViewDataSourceStartManualLoading:(UIScrollView *)scrollView;
-
-#pragma mark scrollView init
-- (id)initWithScrollView:(UIScrollView* )scrollView orientation:(EGOPullOrientation)orientation;
-- (void)adjustPosition;
+- (id)initWithFrame:(CGRect)frame arrowImageName:(NSString *)arrow textColor:(UIColor *)textColor;
 
 - (void)refreshLastUpdatedDate;
 - (void)egoRefreshScrollViewDidScroll:(UIScrollView *)scrollView;
 - (void)egoRefreshScrollViewDidEndDragging:(UIScrollView *)scrollView;
 - (void)egoRefreshScrollViewDataSourceDidFinishedLoading:(UIScrollView *)scrollView;
+
 @end
-@protocol EGORefreshTableHeaderDelegate
+@protocol EGORefreshTableHeaderDelegate <NSObject>
 - (void)egoRefreshTableHeaderDidTriggerRefresh:(EGORefreshTableHeaderView*)view;
 - (BOOL)egoRefreshTableHeaderDataSourceIsLoading:(EGORefreshTableHeaderView*)view;
 @optional

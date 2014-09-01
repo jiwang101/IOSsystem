@@ -11,6 +11,10 @@
 #import "DataExchangeManager.h"
 #import "Macros.h"
 #import "SystemLib.h"
+#import <RIButtonItem.h>
+#import <UIAlertView+Blocks.h>
+#import <MMProgressHUD.h>
+#import <JSONKit.h>
 
 @interface BaseViewController : UIViewController<DataExchangeManagerDelegate>
 @property (nonatomic,assign) AppManage *manage;

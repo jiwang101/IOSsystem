@@ -11,6 +11,7 @@
                 <outlet property="autoLoginButton" destination="01g-FH-Wvj" id="YGl-Lt-5R7"/>
                 <outlet property="loginNameTextField" destination="4RV-N1-niu" id="drv-2X-TKM"/>
                 <outlet property="loginPassTextField" destination="jLO-V4-cWa" id="6NU-UT-0ka"/>
+                <outlet property="rememberButton" destination="b3K-kL-Jiq" id="I6P-yu-v2u"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

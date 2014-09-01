@@ -8,9 +8,7 @@
 
 #import "LoginViewController.h"
 #import "SelectUnitsViewController.h"
-#import <MMProgressHUD.h>
 #import <AdSupport/ASIdentifierManager.h>
-#import <JSONKit.h>
 #import <GDataXMLNode.h>
 #import "LLXMLParser.h"
 #import "UserItem.h"
@@ -41,7 +39,7 @@
         [self.navigationController pushViewController:selectUnitController animated:NO];
     }
     self.autoLoginButton.selected = self.manage.isAutoLogin;
-    
+    self.rememberButton.selected = self.manage.isRememberPass;
     self.loginNameTextField.text = self.manage.lastLoginName;
     if (self.manage.isRememberPass) {
         self.loginPassTextField.text = self.manage.lastLoginPass;

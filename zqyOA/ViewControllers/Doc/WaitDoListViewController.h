@@ -8,6 +8,7 @@
 
 #import "BaseViewController.h"
 
-@interface WaitDoListViewController : BaseViewController
+@interface WaitDoListViewController : BaseViewController<UITableViewDataSource,UITableViewDelegate>
 
+@property (weak, nonatomic) IBOutlet UITableView *listTableView;
 @end

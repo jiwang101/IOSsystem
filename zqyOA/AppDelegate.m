@@ -60,7 +60,7 @@
         self.nav = [[UINavigationController alloc] initWithRootViewController:selectUnitController];
         
         self.nav.view.backgroundColor = [UIColor whiteColor];
-        //    self.nav.navigationBarHidden = YES;
+        self.nav.navigationBarHidden = YES;
         self.window.rootViewController = self.nav;
 		
 	}
@@ -70,7 +70,7 @@
         self.nav = [[UINavigationController alloc] initWithRootViewController:selectUnitController];
         
         self.nav.view.backgroundColor = [UIColor whiteColor];
-        //    self.nav.navigationBarHidden = YES;
+        self.nav.navigationBarHidden = YES;
         self.window.rootViewController = self.nav;
     }
     //**** 退出登录 ****

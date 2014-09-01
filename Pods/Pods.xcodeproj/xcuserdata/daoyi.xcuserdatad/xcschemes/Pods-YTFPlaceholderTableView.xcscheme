@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "11E33E647CFF4EA8BD9EB948"
+               BlueprintIdentifier = "02F5478786924006B71500AB"
                BuildableName = "libPods-YTFPlaceholderTableView.a"
                BlueprintName = "Pods-YTFPlaceholderTableView"
                ReferencedContainer = "container:Pods.xcodeproj">

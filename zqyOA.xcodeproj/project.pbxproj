@@ -26,17 +26,25 @@
 		B74FB9F019AB1E1C001F73F6 /* WaitDoListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B74FB9EE19AB1E1C001F73F6 /* WaitDoListViewController.xib */; };
 		B74FB9F419AB2E18001F73F6 /* SystemLib.m in Sources */ = {isa = PBXBuildFile; fileRef = B74FB9F319AB2E18001F73F6 /* SystemLib.m */; };
 		B75249C419A6DD0800E4C874 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B75249C319A6DD0800E4C874 /* AdSupport.framework */; };
+		B755A3CB19B0234800C18495 /* DocItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B755A3CA19B0234800C18495 /* DocItem.m */; };
+		B755A3CE19B0253F00C18495 /* WaitDoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B755A3CD19B0253F00C18495 /* WaitDoCell.m */; };
+		B755A3D119B058BC00C18495 /* DownRecordItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B755A3D019B058BC00C18495 /* DownRecordItem.m */; };
+		B755A3D719B05E8D00C18495 /* DownCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B755A3D519B05E8D00C18495 /* DownCell.m */; };
+		B755A3D819B05E8D00C18495 /* DownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B755A3D619B05E8D00C18495 /* DownCell.xib */; };
+		B762823C19AF022F0075EF95 /* DownloadMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B762823A19AF022F0075EF95 /* DownloadMainViewController.m */; };
+		B762823D19AF022F0075EF95 /* DownloadMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B762823B19AF022F0075EF95 /* DownloadMainViewController.xib */; };
 		B776E47019A5A69200D4E8FE /* BaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B776E46F19A5A69200D4E8FE /* BaseCell.m */; };
 		B776E49319A5DEDA00D4E8FE /* blackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = B776E48919A5DEDA00D4E8FE /* blackArrow.png */; };
 		B776E49419A5DEDA00D4E8FE /* blackArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B776E48A19A5DEDA00D4E8FE /* blackArrow@2x.png */; };
 		B776E49519A5DEDA00D4E8FE /* blueArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = B776E48B19A5DEDA00D4E8FE /* blueArrow.png */; };
 		B776E49619A5DEDA00D4E8FE /* blueArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B776E48C19A5DEDA00D4E8FE /* blueArrow@2x.png */; };
-		B776E49719A5DEDA00D4E8FE /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B776E48E19A5DEDA00D4E8FE /* EGORefreshTableHeaderView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B776E49719A5DEDA00D4E8FE /* EGORefreshCustomTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B776E48E19A5DEDA00D4E8FE /* EGORefreshCustomTableHeaderView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B776E49819A5DEDA00D4E8FE /* grayArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = B776E48F19A5DEDA00D4E8FE /* grayArrow.png */; };
 		B776E49919A5DEDA00D4E8FE /* grayArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B776E49019A5DEDA00D4E8FE /* grayArrow@2x.png */; };
 		B776E49A19A5DEDA00D4E8FE /* whiteArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = B776E49119A5DEDA00D4E8FE /* whiteArrow.png */; };
 		B776E49B19A5DEDA00D4E8FE /* whiteArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B776E49219A5DEDA00D4E8FE /* whiteArrow@2x.png */; };
 		B776E49E19A5E43400D4E8FE /* UserItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B776E49D19A5E43400D4E8FE /* UserItem.m */; };
+		B77D8AF719B4281800094B7C /* DownLoadFileCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = B77D8AF619B4281800094B7C /* DownLoadFileCenter.m */; };
 		B77FB36319A4401900CED9E7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B77FB36219A4401900CED9E7 /* Localizable.strings */; };
 		B7921D4D199DE05500187C98 /* DataExchangeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B7921D4C199DE05500187C98 /* DataExchangeManager.m */; };
 		B7EDD6961991E39C0082C28E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7EDD6951991E39C0082C28E /* BaseViewController.m */; };
@@ -91,20 +99,34 @@
 		B74FB9F219AB2E18001F73F6 /* SystemLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemLib.h; sourceTree = "<group>"; };
 		B74FB9F319AB2E18001F73F6 /* SystemLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemLib.m; sourceTree = "<group>"; };
 		B75249C319A6DD0800E4C874 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		B755A3C919B0234800C18495 /* DocItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocItem.h; sourceTree = "<group>"; };
+		B755A3CA19B0234800C18495 /* DocItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocItem.m; sourceTree = "<group>"; };
+		B755A3CC19B0253F00C18495 /* WaitDoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitDoCell.h; sourceTree = "<group>"; };
+		B755A3CD19B0253F00C18495 /* WaitDoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaitDoCell.m; sourceTree = "<group>"; };
+		B755A3CF19B058BC00C18495 /* DownRecordItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownRecordItem.h; sourceTree = "<group>"; };
+		B755A3D019B058BC00C18495 /* DownRecordItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownRecordItem.m; sourceTree = "<group>"; };
+		B755A3D419B05E8D00C18495 /* DownCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownCell.h; sourceTree = "<group>"; };
+		B755A3D519B05E8D00C18495 /* DownCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownCell.m; sourceTree = "<group>"; };
+		B755A3D619B05E8D00C18495 /* DownCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DownCell.xib; sourceTree = "<group>"; };
+		B762823919AF022F0075EF95 /* DownloadMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadMainViewController.h; sourceTree = "<group>"; };
+		B762823A19AF022F0075EF95 /* DownloadMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadMainViewController.m; sourceTree = "<group>"; };
+		B762823B19AF022F0075EF95 /* DownloadMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DownloadMainViewController.xib; sourceTree = "<group>"; };
 		B776E46E19A5A69200D4E8FE /* BaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCell.h; sourceTree = "<group>"; };
 		B776E46F19A5A69200D4E8FE /* BaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCell.m; sourceTree = "<group>"; };
 		B776E48919A5DEDA00D4E8FE /* blackArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackArrow.png; sourceTree = "<group>"; };
 		B776E48A19A5DEDA00D4E8FE /* blackArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackArrow@2x.png"; sourceTree = "<group>"; };
 		B776E48B19A5DEDA00D4E8FE /* blueArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueArrow.png; sourceTree = "<group>"; };
 		B776E48C19A5DEDA00D4E8FE /* blueArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blueArrow@2x.png"; sourceTree = "<group>"; };
-		B776E48D19A5DEDA00D4E8FE /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
-		B776E48E19A5DEDA00D4E8FE /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
+		B776E48D19A5DEDA00D4E8FE /* EGORefreshCustomTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshCustomTableHeaderView.h; sourceTree = "<group>"; };
+		B776E48E19A5DEDA00D4E8FE /* EGORefreshCustomTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshCustomTableHeaderView.m; sourceTree = "<group>"; };
 		B776E48F19A5DEDA00D4E8FE /* grayArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grayArrow.png; sourceTree = "<group>"; };
 		B776E49019A5DEDA00D4E8FE /* grayArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grayArrow@2x.png"; sourceTree = "<group>"; };
 		B776E49119A5DEDA00D4E8FE /* whiteArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteArrow.png; sourceTree = "<group>"; };
 		B776E49219A5DEDA00D4E8FE /* whiteArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteArrow@2x.png"; sourceTree = "<group>"; };
 		B776E49C19A5E43400D4E8FE /* UserItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserItem.h; sourceTree = "<group>"; };
 		B776E49D19A5E43400D4E8FE /* UserItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserItem.m; sourceTree = "<group>"; };
+		B77D8AF519B4281800094B7C /* DownLoadFileCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownLoadFileCenter.h; sourceTree = "<group>"; };
+		B77D8AF619B4281800094B7C /* DownLoadFileCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownLoadFileCenter.m; sourceTree = "<group>"; };
 		B77FB36219A4401900CED9E7 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		B7921D4B199DE05500187C98 /* DataExchangeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataExchangeManager.h; sourceTree = "<group>"; };
 		B7921D4C199DE05500187C98 /* DataExchangeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataExchangeManager.m; sourceTree = "<group>"; };
@@ -249,6 +271,18 @@
 			path = Doc;
 			sourceTree = "<group>";
 		};
+		B762823819AF01CD0075EF95 /* DownLoad */ = {
+			isa = PBXGroup;
+			children = (
+				B762823919AF022F0075EF95 /* DownloadMainViewController.h */,
+				B762823A19AF022F0075EF95 /* DownloadMainViewController.m */,
+				B762823B19AF022F0075EF95 /* DownloadMainViewController.xib */,
+				B77D8AF519B4281800094B7C /* DownLoadFileCenter.h */,
+				B77D8AF619B4281800094B7C /* DownLoadFileCenter.m */,
+			);
+			path = DownLoad;
+			sourceTree = "<group>";
+		};
 		B776E48819A5DEDA00D4E8FE /* EGO */ = {
 			isa = PBXGroup;
 			children = (
@@ -256,8 +290,8 @@
 				B776E48A19A5DEDA00D4E8FE /* blackArrow@2x.png */,
 				B776E48B19A5DEDA00D4E8FE /* blueArrow.png */,
 				B776E48C19A5DEDA00D4E8FE /* blueArrow@2x.png */,
-				B776E48D19A5DEDA00D4E8FE /* EGORefreshTableHeaderView.h */,
-				B776E48E19A5DEDA00D4E8FE /* EGORefreshTableHeaderView.m */,
+				B776E48D19A5DEDA00D4E8FE /* EGORefreshCustomTableHeaderView.h */,
+				B776E48E19A5DEDA00D4E8FE /* EGORefreshCustomTableHeaderView.m */,
 				B776E48F19A5DEDA00D4E8FE /* grayArrow.png */,
 				B776E49019A5DEDA00D4E8FE /* grayArrow@2x.png */,
 				B776E49119A5DEDA00D4E8FE /* whiteArrow.png */,
@@ -271,6 +305,11 @@
 			children = (
 				B776E46E19A5A69200D4E8FE /* BaseCell.h */,
 				B776E46F19A5A69200D4E8FE /* BaseCell.m */,
+				B755A3CC19B0253F00C18495 /* WaitDoCell.h */,
+				B755A3CD19B0253F00C18495 /* WaitDoCell.m */,
+				B755A3D419B05E8D00C18495 /* DownCell.h */,
+				B755A3D519B05E8D00C18495 /* DownCell.m */,
+				B755A3D619B05E8D00C18495 /* DownCell.xib */,
 			);
 			name = Cells;
 			path = Cell;
@@ -289,6 +328,7 @@
 		B7EDD6901991E3590082C28E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				B762823819AF01CD0075EF95 /* DownLoad */,
 				B74FB9EB19AB1DF8001F73F6 /* Doc */,
 				B7EDD6F9199206340082C28E /* Login */,
 				B7EDD6FA199206340082C28E /* Main */,
@@ -307,6 +347,10 @@
 				B7EDD71419922CBD0082C28E /* UnitItem.m */,
 				B776E49C19A5E43400D4E8FE /* UserItem.h */,
 				B776E49D19A5E43400D4E8FE /* UserItem.m */,
+				B755A3C919B0234800C18495 /* DocItem.h */,
+				B755A3CA19B0234800C18495 /* DocItem.m */,
+				B755A3CF19B058BC00C18495 /* DownRecordItem.h */,
+				B755A3D019B058BC00C18495 /* DownRecordItem.m */,
 			);
 			name = Models;
 			path = Model;
@@ -453,8 +497,10 @@
 				B7EDD70C199222C50082C28E /* MainViewController.xib in Resources */,
 				B776E49819A5DEDA00D4E8FE /* grayArrow.png in Resources */,
 				B776E49319A5DEDA00D4E8FE /* blackArrow.png in Resources */,
+				B762823D19AF022F0075EF95 /* DownloadMainViewController.xib in Resources */,
 				B73FE9A6199079B300533C33 /* InfoPlist.strings in Resources */,
 				B776E49419A5DEDA00D4E8FE /* blackArrow@2x.png in Resources */,
+				B755A3D819B05E8D00C18495 /* DownCell.xib in Resources */,
 				B776E49B19A5DEDA00D4E8FE /* whiteArrow@2x.png in Resources */,
 				B73FE9AE199079B300533C33 /* Images.xcassets in Resources */,
 			);
@@ -513,17 +559,23 @@
 				B74FB9F419AB2E18001F73F6 /* SystemLib.m in Sources */,
 				B74FB9EF19AB1E1C001F73F6 /* WaitDoListViewController.m in Sources */,
 				B7EDD70F199225750082C28E /* AppManage.m in Sources */,
+				B755A3D719B05E8D00C18495 /* DownCell.m in Sources */,
 				B776E47019A5A69200D4E8FE /* BaseCell.m in Sources */,
 				B7921D4D199DE05500187C98 /* DataExchangeManager.m in Sources */,
+				B77D8AF719B4281800094B7C /* DownLoadFileCenter.m in Sources */,
 				B7EDD6FE1992065E0082C28E /* SelectUnitsViewController.m in Sources */,
 				B73FE9AC199079B300533C33 /* AppDelegate.m in Sources */,
+				B755A3CE19B0253F00C18495 /* WaitDoCell.m in Sources */,
 				B776E49E19A5E43400D4E8FE /* UserItem.m in Sources */,
 				B7EDD706199222B40082C28E /* LoginViewController.m in Sources */,
+				B762823C19AF022F0075EF95 /* DownloadMainViewController.m in Sources */,
 				B7EDD702199222A50082C28E /* LuncherViewController.m in Sources */,
 				B7EDD70B199222C50082C28E /* MainViewController.m in Sources */,
 				B7EDD6961991E39C0082C28E /* BaseViewController.m in Sources */,
-				B776E49719A5DEDA00D4E8FE /* EGORefreshTableHeaderView.m in Sources */,
+				B776E49719A5DEDA00D4E8FE /* EGORefreshCustomTableHeaderView.m in Sources */,
+				B755A3D119B058BC00C18495 /* DownRecordItem.m in Sources */,
 				B74FB9E719AB1498001F73F6 /* LLXMLParser.m in Sources */,
+				B755A3CB19B0234800C18495 /* DocItem.m in Sources */,
 				B73FE9A8199079B300533C33 /* main.m in Sources */,
 				B74FB9EA19AB14CB001F73F6 /* NSMutableArray+Extend.m in Sources */,
 			);

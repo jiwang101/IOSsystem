@@ -42,6 +42,12 @@
 #define COCOAPODS_VERSION_MINOR_DDPageControl 1
 #define COCOAPODS_VERSION_PATCH_DDPageControl 0
 
+// EGOTableViewPullRefreshAndLoadMore
+#define COCOAPODS_POD_AVAILABLE_EGOTableViewPullRefreshAndLoadMore
+#define COCOAPODS_VERSION_MAJOR_EGOTableViewPullRefreshAndLoadMore 1
+#define COCOAPODS_VERSION_MINOR_EGOTableViewPullRefreshAndLoadMore 0
+#define COCOAPODS_VERSION_PATCH_EGOTableViewPullRefreshAndLoadMore 1
+
 // FMDB
 #define COCOAPODS_POD_AVAILABLE_FMDB
 #define COCOAPODS_VERSION_MAJOR_FMDB 2
@@ -70,7 +76,7 @@
 #define COCOAPODS_POD_AVAILABLE_IQKeyboardManager
 #define COCOAPODS_VERSION_MAJOR_IQKeyboardManager 3
 #define COCOAPODS_VERSION_MINOR_IQKeyboardManager 0
-#define COCOAPODS_VERSION_PATCH_IQKeyboardManager 6
+#define COCOAPODS_VERSION_PATCH_IQKeyboardManager 8
 
 // JSONKit
 #define COCOAPODS_POD_AVAILABLE_JSONKit
@@ -138,6 +144,12 @@
 #define COCOAPODS_VERSION_MAJOR_SDWebImage_ProgressView 0
 #define COCOAPODS_VERSION_MINOR_SDWebImage_ProgressView 3
 #define COCOAPODS_VERSION_PATCH_SDWebImage_ProgressView 1
+
+// UIAlertView-Blocks
+#define COCOAPODS_POD_AVAILABLE_UIAlertView_Blocks
+#define COCOAPODS_VERSION_MAJOR_UIAlertView_Blocks 1
+#define COCOAPODS_VERSION_MINOR_UIAlertView_Blocks 0
+#define COCOAPODS_VERSION_PATCH_UIAlertView_Blocks 0
 
 // YTFPlaceholderTableView
 #define COCOAPODS_POD_AVAILABLE_YTFPlaceholderTableView

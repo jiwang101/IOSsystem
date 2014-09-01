@@ -24,17 +24,17 @@
 //  THE SOFTWARE.
 //
 
-#import "EGORefreshTableHeaderView.h"
+#import "EGORefreshCustomTableHeaderView.h"
 
 
 #define FLIP_ANIMATION_DURATION 0.18f
 
 
-@interface EGORefreshTableHeaderView (Private)
+@interface EGORefreshCustomTableHeaderView (Private)
 - (void)setState:(EGOPullRefreshState)aState;
 @end
 
-@implementation EGORefreshTableHeaderView
+@implementation EGORefreshCustomTableHeaderView
 
 @synthesize delegate=_delegate;
 

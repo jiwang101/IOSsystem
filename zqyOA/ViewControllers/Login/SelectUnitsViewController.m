@@ -7,18 +7,16 @@
 //
 
 #import "SelectUnitsViewController.h"
-#import <MMProgressHUD.h>
-#import <JSONKit.h>
 #import "UnitItem.h"
 #import "BaseCell.h"
-#import "EGORefreshTableHeaderView.h"
+#import "EGORefreshCustomTableHeaderView.h"
 
 @interface SelectUnitsViewController ()<EGORefreshTableHeaderDelegate>{
     BOOL _isRefreshing;
 }
 @property (nonatomic,strong) NSMutableArray *unitList;
 @property (nonatomic,strong) NSMutableArray *unitTableList;
-@property (nonatomic,strong) EGORefreshTableHeaderView *downEGO;
+@property (nonatomic,strong) EGORefreshCustomTableHeaderView *downEGO;
 //@property (nonatomic,strong) EGORefreshTableHeaderView *upEGO;
 
 @end
@@ -74,7 +72,7 @@
     self.unitTableView.tableHeaderView = tableViewSearchVC;
     
     //下拉刷新
-    _downEGO = [[EGORefreshTableHeaderView alloc] initWithScrollView:self.unitTableView orientation:EGOPullOrientationDown];
+    _downEGO = [[EGORefreshCustomTableHeaderView alloc] initWithScrollView:self.unitTableView orientation:EGOPullOrientationDown];
     _downEGO.delegate = self;
     
 //    //上拉加载更多
@@ -152,16 +150,16 @@
 
 #pragma mark - EGORefreshTableHeaderDelegate
 
-- (void)egoRefreshTableHeaderDidTriggerRefresh:(EGORefreshTableHeaderView*)view {
+- (void)egoRefreshTableHeaderDidTriggerRefresh:(EGORefreshCustomTableHeaderView*)view {
     _isRefreshing = YES;
     [MMProgressHUD showWithStatus:LString(@"Loading")];
     [self.dataExchangeMgr getUnitList];
 }
 
-- (BOOL)egoRefreshTableHeaderDataSourceIsLoading:(EGORefreshTableHeaderView*)view {
+- (BOOL)egoRefreshTableHeaderDataSourceIsLoading:(EGORefreshCustomTableHeaderView*)view {
     return _isRefreshing;
 }
-- (NSDate*)egoRefreshTableHeaderDataSourceLastUpdated:(EGORefreshTableHeaderView*)view {
+- (NSDate*)egoRefreshTableHeaderDataSourceLastUpdated:(EGORefreshCustomTableHeaderView*)view {
     return [NSDate date];
 }
 #pragma mark - DataExchangeManagerDelegate

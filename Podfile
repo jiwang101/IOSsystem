@@ -13,4 +13,6 @@ pod 'IQKeyboardManager', '~> 3.0.6'
 pod 'YTFPlaceholderTableView', '~> 0.2.1'
 pod 'KissXML', '~> 5.0'
 pod 'GDataXML-HTML', '~> 1.1.0'
+pod 'UIAlertView-Blocks', '~> 1.0'
+pod 'EGOTableViewPullRefreshAndLoadMore', '~> 1.0.1'
 

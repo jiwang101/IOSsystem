@@ -146,6 +146,15 @@ static NSArray *cookies = nil;
     
 }
 
+- (NSDictionary *)buildDicWithSystemParams
+{
+    NSDictionary *params = [[NSDictionary alloc] initWithObjectsAndKeys:@"SYSTEM-0000000000000000000000005",@"systemID",
+                            @"client", @"account",
+                            @"clientpass123", @"password", nil];
+    return params;
+}
+
+
 #pragma mark - HttpRequest delegate
 - (void)requestFinished:(HttpRequest *)request
 {
@@ -183,39 +192,36 @@ static NSArray *cookies = nil;
     [self.requestQueue removeObjectWhileEnumerate:request];
 }
 
+#pragma mark - do1后台地址
 - (NSURL *)buildUrlWithInterface:(NSString *)category method:(NSString *)method
 {
     NSString *urlString = [NSString stringWithFormat:@"%@/%@!%@.action",kSystemUrl,category,method];
     return [NSURL URLWithString:urlString];
 }
 
-//门户接口
+
+#pragma mark - 门户接口地址
 - (NSURL *)buildUrlWithDynamicServerForWebsite:(NSString *)method
 {
     NSString *category = @"WS/Asynchronous";
     return [self buildUrlWithDynamicServer:category method:method server:[AppManage sharedManager].currentUnitItem.OSUrl];
 }
-
-- (NSDictionary *)buildDicWithSystemParams
-{
-    NSDictionary *params = [[NSDictionary alloc] initWithObjectsAndKeys:@"SYSTEM-0000000000000000000000005",@"systemID",
-                            @"client", @"account",
-                            @"clientpass123", @"password", nil];
-    return params;
-}
-
-//OA接口
-- (NSURL *)buildUrlWithDynamicServerForOA:(NSString *)category method:(NSString *)method
-{
-    return [self buildUrlWithDynamicServer:category method:method server:[AppManage sharedManager].currentUnitItem.OAUrl];
-}
-
 - (NSURL *)buildUrlWithDynamicServer:(NSString *)category method:(NSString *)method server:(NSString *)serverUrl
 {
     NSString *urlString = [NSString stringWithFormat:@"%@/%@/%@",serverUrl,category,method];
     return [NSURL URLWithString:urlString];
 }
 
+#pragma mark - OA接口地址
+- (NSURL *)buildUrlWithDynamicServerForOA:(NSString *)category
+{
+    NSString *urlString = [NSString stringWithFormat:@"%@/%@!%@.action",[AppManage sharedManager].currentUnitItem.OAUrl,kServerRoot,category];
+    return [NSURL URLWithString:urlString];
+}
+
+
+
+#pragma mark - 具体请求方法
 //获取区域列表
 - (void)getUnitList
 {
@@ -249,7 +255,23 @@ static NSArray *cookies = nil;
     
     [self requestWithWebServiceUrl:webService method:method parameter:params requestType:RT_getUserMoreInfo];
 }
-
+-(void)getWaitDoDocList_loginName:(NSString *)loginName
+                           pageNo:(NSInteger)pageNo
+                         pageSize:(NSInteger)pageSize
+                             type:(NSInteger)type
+                            title:(NSString *)title{
+    NSString *category = @"processRequest";
+    NSString *method = @"NewGetTodoList";
+    NSDictionary *params = [[NSDictionary alloc] initWithObjectsAndKeys:method,@"Action"
+                            ,loginName,@"userName"
+                            ,[NSNumber numberWithInteger:pageNo],@"page"
+                            ,[NSNumber numberWithInteger:pageSize],@"pageSize"
+                            ,title,@"title"
+                            ,[NSNumber numberWithInteger:type],@"type"
+                            , nil];
+    [self requestWithUrl:[self buildUrlWithDynamicServerForOA:category] parameter:params requestType:RT_getWaitDoDocList];
+    
+}
 @end
 
 

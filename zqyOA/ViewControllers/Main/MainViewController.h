@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UIView *contentView;
 - (IBAction)waitDoAction:(id)sender;
 - (IBAction)haveDoAction:(id)sender;
+- (IBAction)exitAction:(id)sender;
 
 
 @end
