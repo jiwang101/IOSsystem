@@ -39,7 +39,7 @@
     [self.window makeKeyAndVisible];
     
     [self performSelector:@selector(launchFinished) withObject:nil afterDelay:1.5];
-    //test bug
+    //test bug func1
     return YES;
 }
 - (void)launchFinished
